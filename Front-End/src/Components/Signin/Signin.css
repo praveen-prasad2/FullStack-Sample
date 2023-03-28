@@ -1,0 +1,17 @@
+#container {
+    width: 400px;
+    height: 450px;
+    background: #07182E;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    place-content: center;
+    place-items: center;
+    overflow: hidden;
+    border-radius: 20px;
+    color: white;
+  }
+  .input{
+    color: white;
+  }
+  

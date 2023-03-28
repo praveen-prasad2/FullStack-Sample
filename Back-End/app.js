@@ -1,0 +1,21 @@
+const express = require("express")
+const app = express()
+const mongoose = require('mongoose')
+const sampleRouter=require("./Routes/sample")
+mongoose.connect("mongodb+srv://uglymallu:123@cluster0.jonxpqi.mongodb.net/Fullstack-sample?retryWrites=true&w=majority")
+
+app.use(express.urlencoded({
+    extended: false
+}))
+
+app.use(express.json())
+
+app.use("/",sampleRouter)
+
+app.listen(5000, (err) => {
+    if (err) {
+        console.log("error");
+    } else {
+        console.log("success");
+    }
+})
