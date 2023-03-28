@@ -1,0 +1,14 @@
+
+#wrap{
+    width: 450px;
+    height: 500px;
+    background: #07182E;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    place-content: center;
+    place-items: center;
+    overflow: hidden;
+    border-radius: 20px;
+    color: white;
+  }
