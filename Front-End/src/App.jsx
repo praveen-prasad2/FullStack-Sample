@@ -8,7 +8,7 @@ import Signin from './Components/Signin/Signin'
 function App() {
 
   return (
-    <Signin />
+    <Signup />
   )
 }
 

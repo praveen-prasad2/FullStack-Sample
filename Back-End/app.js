@@ -2,11 +2,14 @@ const express = require("express")
 const app = express()
 const mongoose = require('mongoose')
 const sampleRouter=require("./Routes/sample")
+const cors=require("cors")
 mongoose.connect("mongodb+srv://uglymallu:123@cluster0.jonxpqi.mongodb.net/Fullstack-sample?retryWrites=true&w=majority")
 
 app.use(express.urlencoded({
     extended: false
 }))
+
+app.use(cors())
 
 app.use(express.json())
 
